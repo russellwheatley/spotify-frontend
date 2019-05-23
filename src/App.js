@@ -74,7 +74,7 @@ class App extends React.Component {
         <div className="list">
           {this.state.items.map((item) => {
             return (
-              <div className="item">
+              <div key={item.id} className="item">
                 {type === 'track' && (
                   <Track item={item} brokenImg={this.brokenImg} />
                 )}

@@ -4,13 +4,11 @@
   "private": true,
   "dependencies": {
     "a2a": "^0.2.0",
-    "antd": "^3.18.2",
     "axios": "^0.18.0",
     "idx": "^2.5.6",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
-    "react-toast-notifications": "^1.4.0",
     "react-toastify": "^5.1.1"
   },
   "scripts": {
