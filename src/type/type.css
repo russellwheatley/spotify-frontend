@@ -1,0 +1,22 @@
+.playlist {
+    flex-grow:1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 0 20px;
+}
+
+.playlist > * {
+    margin-bottom: 15px;
+}
+
+.list-item {
+    flex-grow:1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 0 20px;
+}
+
+.list-item > * {
+    margin-bottom: 15px;
+}
+
