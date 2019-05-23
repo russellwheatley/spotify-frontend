@@ -1,5 +1,5 @@
 import React from 'react';
-import idx from "idx";
+import idx from 'idx';
 
 function album({ item, brokenImg }) {
   const img = idx(item, ($) => $.images[0].url) || brokenImg;
@@ -14,11 +14,16 @@ function album({ item, brokenImg }) {
             Open Spotify album page
           </a>
         )}
-        {Array.isArray(item.artists) && <div>
-          {item.artists.map((artist) => (
-            <span key={artist.name}> <i>{artist.name}&nbsp;&nbsp;&nbsp;</i></span>
-          ))}
-        </div>}
+        {Array.isArray(item.artists) && (
+          <div>
+            {item.artists.map((artist) => (
+              <span key={artist.name}>
+                {' '}
+                <i>{artist.name}&nbsp;&nbsp;&nbsp;</i>
+              </span>
+            ))}
+          </div>
+        )}
       </div>
     </>
   );
