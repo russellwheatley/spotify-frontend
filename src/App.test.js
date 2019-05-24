@@ -12,7 +12,13 @@ it('renders without crashing', () => {
 describe('get spotify items using Promises', () => {
   it('should load spotify data', () => {
     return api.search('beatles', 'track').then((res) => {
-      expect(res.data).toBeDefined();
+      expect(res.data).toEqual(
+        expect.arrayContaining([
+          expect.objectContaining({
+            id: expect.anything(),
+          }),
+        ])
+      );
     });
   });
 });

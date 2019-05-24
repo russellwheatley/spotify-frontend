@@ -2,7 +2,7 @@ import React from 'react';
 import a2a from 'a2a';
 import { toast } from 'react-toastify';
 import api from './api';
-import './App.css';
+import './app.css';
 import Track from './type/Track';
 import Album from './type/Album';
 import Artist from './type/Artist';
