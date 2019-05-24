@@ -29,7 +29,7 @@ class App extends React.Component {
       this.setState({ type: target.value, items: data });
       return;
     } else if (items.length) {
-      this.setState({ type: target.value });
+      this.setState({ type: target.value, items:[] });
       return;
     }
     this.setState({ type: target.value });
